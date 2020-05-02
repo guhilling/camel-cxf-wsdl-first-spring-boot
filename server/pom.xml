@@ -116,6 +116,11 @@
 			<artifactId>cxf-xjc-runtime</artifactId>
 			<version>${cxf.xjc.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>spring-cloud-kubernetes-core</artifactId>
+		</dependency>
 
 		<!-- Testing -->
 		<dependency>
