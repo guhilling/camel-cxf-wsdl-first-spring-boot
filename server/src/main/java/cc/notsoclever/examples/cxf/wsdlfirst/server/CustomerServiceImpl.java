@@ -34,8 +34,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CustomerServiceImpl implements CustomerService {
-    private static final transient Logger LOG = LoggerFactory.getLogger(CustomerServiceImpl.class);
+public class CustomerServiceImpl {
 
     private Map<String, Customer> customers = new HashMap<String, Customer>();
 
@@ -77,7 +76,6 @@ public class CustomerServiceImpl implements CustomerService {
         customers.put(name, customer);
     }
 
-    @Override
     public List<Customer> getCustomersByName(String name) throws NoSuchCustomerException {
 
         List<Customer> results = new ArrayList<Customer>();
@@ -98,7 +96,6 @@ public class CustomerServiceImpl implements CustomerService {
         return results;
     }
 
-    @Override
     public Customer updateCustomer(Customer customer) throws NoSuchCustomerException {
         if (customers.containsKey(customer.getName())) {
             customers.put(customer.getName(), customer);

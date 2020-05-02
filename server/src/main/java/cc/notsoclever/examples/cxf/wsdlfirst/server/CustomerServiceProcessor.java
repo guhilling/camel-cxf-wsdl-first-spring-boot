@@ -35,7 +35,7 @@ public class CustomerServiceProcessor implements Processor {
     private static final transient Logger LOG = LoggerFactory.getLogger(CustomerServiceProcessor.class);
 
     @Autowired
-    CustomerService customerService;
+    CustomerServiceImpl customerService;
 
     @Override
     public void process(Exchange exchange) throws Exception {
@@ -55,7 +55,7 @@ public class CustomerServiceProcessor implements Processor {
         }
     }
 
-    public void setCustomerService(CustomerService customerService) {
+    public void setCustomerService(CustomerServiceImpl customerService) {
         this.customerService = customerService;
     }
 }

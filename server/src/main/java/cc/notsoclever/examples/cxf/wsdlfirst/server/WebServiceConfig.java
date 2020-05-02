@@ -50,7 +50,7 @@ public class WebServiceConfig {
     }
     
     @Bean
-    public CustomerService customerService()
+    public CustomerServiceImpl customerService()
     {
     	return new CustomerServiceImpl();
     }
