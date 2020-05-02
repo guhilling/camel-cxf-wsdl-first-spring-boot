@@ -3,3 +3,5 @@
 **/.project
 **/.settings
 **/DS_Store
+client/src/main/java/META-INF/
+server/src/main/java/META-INF/
